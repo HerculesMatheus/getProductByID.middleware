@@ -1,4 +1,4 @@
-export async function status(ctx: Context, next: () => Promise<any>) {
+export async function status(ctx: Context, next: () => Promise<unknown>) {
   const {
     state: { code },
     clients: { status: statusClient },

@@ -8,7 +8,10 @@ describe('status test', () => {
       state: { code: 200 },
       clients: {
         status: {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           getStatus: (_: string) => Promise.resolve(mock),
+
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           getStatusWithHeaders: (_: string) =>
             Promise.resolve({
               headers: {},
