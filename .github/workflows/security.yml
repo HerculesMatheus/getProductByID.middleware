@@ -11,14 +11,16 @@ jobs:
     name: Security Check
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: Security Review
+        env:
+          URL_SLACK: ${{ secrets.URL_SLACK }}
         run: |
           git clone https://github.com/ACCT-global/security-review-ci.git
           cp security-review-ci/main.py .
           rm -rf security-review-ci
-          python3 main.py
+          python3 main.py ${URL_SLACK}
           rm main.py
