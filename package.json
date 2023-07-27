@@ -7,7 +7,7 @@
     "commit": "cz",
     "lint": "eslint \"**/*.{ts,js}\"",
     "lint:fix": "eslint --fix \"**/*.{ts,js}\"",
-    "format": "prettier --write \"**/*.{json,jsonc}\"",
+    "format": "prettier --write \"**/*.{ts,js,json,jsonc}\"",
     "test": "cd ./node && yarn test",
     "test:coverage": "cd ./node && yarn test:coverage",
     "test:watch": "cd ./node && yarn test:watch"
