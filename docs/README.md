@@ -22,6 +22,10 @@ Change app vendor in `manifest.json` file:
 }
 ```
 
+### Configure the Deploy Action
+
+See the full documentation [here](https://github.com/quality-digital/template.store-theme/blob/main/docs/PUBLISH-AND-DEPLOY.md).
+
 ### Update SonarCloud
 
 Update the `sonar.projectKey` and `sonar.organization` properties in the `sonar-project.properties` file to run unit tests with SonarCloud and generate a coverage metric.
