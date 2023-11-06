@@ -20,3 +20,5 @@ jobs:
     needs: deploy
     uses: quality-digital/reusable-workflows/.github/workflows/pos-deploy.yml@main
     secrets: inherit
+    with:
+      lighthouse: false
