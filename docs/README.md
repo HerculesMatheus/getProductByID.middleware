@@ -22,9 +22,9 @@ Change app vendor in `manifest.json` file:
 }
 ```
 
-### Configure the Deploy Action
+### Setup Workflows
 
-See the full documentation [here](https://github.com/quality-digital/template.store-theme/blob/main/docs/PUBLISH-AND-DEPLOY.md).
+This repository uses [reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows). See the complete setup guide at "[Quality Digital Reusable Workflows](https://github.com/quality-digital/reusable-workflows#readme)".
 
 ### Update SonarCloud
 
