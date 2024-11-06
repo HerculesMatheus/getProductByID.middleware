@@ -6,7 +6,7 @@
   "description": "Reference app for VTEX IO Services",
   "mustUpdateAt": "2022-07-12",
   "builders": {
-    "node": "6.x",
+    "node": "7.x",
     "docs": "0.x"
   },
   "scripts": {
