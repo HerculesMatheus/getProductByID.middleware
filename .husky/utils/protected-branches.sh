@@ -1,7 +1,7 @@
 #!/bin/sh
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
-PROTECTED_BRANCHES="^(main|develop)"
+PROTECTED_BRANCHES="^(main|master|develop)"
 
 if [[ "$BRANCH" =~ $PROTECTED_BRANCHES ]]
 then
