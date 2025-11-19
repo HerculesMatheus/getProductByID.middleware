@@ -16,6 +16,8 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@eslint/js": "^9.14.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.14.0",
@@ -36,5 +38,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@vtex/api": "^7.2.6",
+    "@vtex/tsconfig": "^0.6.0"
   }
 }

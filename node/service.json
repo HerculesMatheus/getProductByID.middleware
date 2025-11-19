@@ -6,8 +6,16 @@
   "maxReplicas": 4,
   "workers": 1,
   "routes": {
-    "status": {
-      "path": "/_v/status/:code",
+    "createDocument": {
+      "path": "/_v/create-document",
+      "public": true
+    },
+    "getDocument": {
+      "path": "/_v/get-document",
+      "public": true
+    },
+    "deleteDocument": {
+      "path": "/_v/delete-document",
       "public": true
     }
   }

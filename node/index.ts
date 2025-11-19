@@ -7,7 +7,9 @@ import type {
 import { LRUCache, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import status from './middlewares/status'
+import getDocument from './middlewares/vbase/getDocument'
+import createDocument from './middlewares/vbase/createDocument'
+import deleteDocument from './middlewares/vbase/deleteDocument'
 
 const TIMEOUT_MS = 800
 
@@ -48,7 +50,8 @@ declare global {
 export default new Service({
   clients,
   routes: {
-    // `status` is the route ID from service.json. It maps to an array of middlewares (or a single handler).
-    status,
+    getDocument,
+    createDocument,
+    deleteDocument
   },
 })

@@ -1,5 +1,5 @@
 {
-  "vendor": "qualitydigital",
+  "vendor": "acctglobal",
   "name": "service-example",
   "version": "0.0.0",
   "title": "Service Example",
@@ -25,6 +25,9 @@
     },
     {
       "name": "colossus-write-logs"
+    },
+    {
+      "name": "vbase-read-write"
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
