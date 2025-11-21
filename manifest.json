@@ -21,6 +21,13 @@
       }
     },
     {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.github.com",
+        "path": "*"
+      }
+    },
+    {
       "name": "colossus-fire-event"
     },
     {

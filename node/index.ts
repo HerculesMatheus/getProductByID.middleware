@@ -10,6 +10,7 @@ import { Clients } from './clients'
 import getDocument from './middlewares/vbase/getDocument'
 import createDocument from './middlewares/vbase/createDocument'
 import deleteDocument from './middlewares/vbase/deleteDocument'
+import getUser from './middlewares/githubApi/getUsers'
 
 const TIMEOUT_MS = 800
 
@@ -52,6 +53,7 @@ export default new Service({
   routes: {
     getDocument,
     createDocument,
-    deleteDocument
+    deleteDocument,
+    getUser,
   },
 })

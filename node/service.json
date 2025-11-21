@@ -17,6 +17,10 @@
     "deleteDocument": {
       "path": "/_v/delete-document",
       "public": true
+    },
+    "getUser": {
+      "path": "/_v/get-github-user/:user",
+      "public": true
     }
   }
 }
