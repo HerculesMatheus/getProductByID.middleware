@@ -13,7 +13,7 @@ export default async function getProductByID(
 
   const { productId } = params
 
-  if (!productId) {
+  if (!productId || productId == ':productId') {
     throw new Error('productId is required')
   }
 
