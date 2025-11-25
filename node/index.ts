@@ -7,10 +7,7 @@ import type {
 import { LRUCache, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import getDocument from './middlewares/vbase/getDocument'
-import createDocument from './middlewares/vbase/createDocument'
-import deleteDocument from './middlewares/vbase/deleteDocument'
-import getUser from './middlewares/githubApi/getUsers'
+import getProductByID from './middlewares/getProductByID'
 
 const TIMEOUT_MS = 800
 
@@ -51,9 +48,6 @@ declare global {
 export default new Service({
   clients,
   routes: {
-    getDocument,
-    createDocument,
-    deleteDocument,
-    getUser,
+    getProductByID,
   },
 })

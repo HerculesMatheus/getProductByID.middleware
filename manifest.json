@@ -1,9 +1,9 @@
 {
   "vendor": "acctglobal",
-  "name": "service-example",
+  "name": "get-product-by-id",
   "version": "0.0.0",
-  "title": "Service Example",
-  "description": "Reference app for VTEX IO Services",
+  "title": "Get product by ID",
+  "description": "Get products by id on vtex catalog API",
   "mustUpdateAt": "2024-11-06",
   "builders": {
     "node": "7.x"
@@ -23,19 +23,36 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "api.github.com",
+        "host": "acctglobal.vtexcommercestable.com.br",
         "path": "*"
       }
+    },
+    {
+      "name": "ViewProduct"
     },
     {
       "name": "colossus-fire-event"
     },
     {
       "name": "colossus-write-logs"
-    },
-    {
-      "name": "vbase-read-write"
     }
   ],
+  "settingsSchema": {
+    "title": "getProductByID",
+    "description": "Get products by id on vtex catalog API",
+    "type": "object",
+    "properties": {
+      "appKeyGetProductByID": {
+        "type": "string",
+        "description": "Chave de autenticação da busca por ID",
+        "default": "vtexappkey-acctglobal-OUNTJH"
+      },
+      "appTokenGetProductByID": {
+        "type": "string",
+        "description": "Token de autenticação da busca por ID",
+        "default": "TWXAQTZVQLUMZRBLIHZKMSBRRVMAMXLNDHKBOLVDVKKXHQRGDUWMVEXYPTODPPBLBXQPKQEESSYMGXLXADMDAHGOTTIKYUBHAVQYKZJWHXCPVEJNLTDMFQIPQQYGIJEY"
+      }
+    }
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

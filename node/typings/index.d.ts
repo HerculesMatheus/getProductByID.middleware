@@ -1,7 +1,4 @@
-export interface objectCreate {
-  name: string
-}
-
-export interface prevDocument {
-  names: string[]
+export interface AppSettings {
+  appKeyGetProductByID: string
+  appTokenGetProductByID: string
 }

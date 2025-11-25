@@ -1,7 +1,7 @@
 import { IOClients } from '@vtex/api'
 
 import Status from './status'
-import GithubApi from './githubApi/getGithubUser'
+import getProductByID from './getProductByID'
 
 // Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {
@@ -9,7 +9,7 @@ export class Clients extends IOClients {
     return this.getOrSet('status', Status)
   }
 
-  public get GithubApi() {
-    return this.getOrSet('GithubApi', GithubApi)
+  public get getProductByID() {
+    return this.getOrSet('getProductByID', getProductByID)
   }
 }
