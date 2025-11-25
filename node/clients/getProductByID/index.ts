@@ -20,6 +20,7 @@ export default class getProductByID extends JanusClient {
           'X-VTEX-API-AppKey': appKeyGetProductByID,
           'X-VTEX-API-AppToken': appTokenGetProductByID,
           Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
       }
     )
