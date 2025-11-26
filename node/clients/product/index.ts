@@ -8,7 +8,7 @@ export default class getProductByID extends JanusClient {
     })
   }
 
-  public async getProduct(
+  public async getProductByID(
     productId: string | string[],
     appKeyGetProductByID: string,
     appTokenGetProductByID: string

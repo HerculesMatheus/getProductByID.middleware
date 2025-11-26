@@ -1,7 +1,7 @@
 import { IOClients } from '@vtex/api'
 
 import Status from './status'
-import getProductByID from './getProductByID'
+import getProductByID from './product'
 
 // Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {

@@ -20,7 +20,7 @@ export default async function getProductByID(
   try {
     const { appKeyGetProductByID, appTokenGetProductByID } =
       await getAppSettings(ctx)
-    const response = await getProductByID.getProduct(
+    const response = await getProductByID.getProductByID(
       productId,
       appKeyGetProductByID,
       appTokenGetProductByID

@@ -28,9 +28,6 @@
       }
     },
     {
-      "name": "ViewProduct"
-    },
-    {
       "name": "colossus-fire-event"
     },
     {
@@ -44,13 +41,11 @@
     "properties": {
       "appKeyGetProductByID": {
         "type": "string",
-        "description": "Chave de autenticação da busca por ID",
-        "default": "vtexappkey-acctglobal-OUNTJH"
+        "description": "Chave de autenticação da busca por ID"
       },
       "appTokenGetProductByID": {
         "type": "string",
-        "description": "Token de autenticação da busca por ID",
-        "default": "TWXAQTZVQLUMZRBLIHZKMSBRRVMAMXLNDHKBOLVDVKKXHQRGDUWMVEXYPTODPPBLBXQPKQEESSYMGXLXADMDAHGOTTIKYUBHAVQYKZJWHXCPVEJNLTDMFQIPQQYGIJEY"
+        "description": "Token de autenticação da busca por ID"
       }
     }
   },
